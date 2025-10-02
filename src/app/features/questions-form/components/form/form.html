@@ -1,28 +1,28 @@
-<form>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="question">
     <span>1. A participação dos projetos aumentou meu conhecimento</span>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-1" type="radio" value="1">
       <label for="question-1-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-2" type="radio" value="2">
       <label for="question-1-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-3" type="radio" value="3">
       <label for="question-1-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-4" type="radio" value="4">
       <label for="question-1-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-5" type="radio" value="5">
       <label for="question-1-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-1" id="question-1-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-6" type="radio" value="5">
       <label for="question-1-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -30,27 +30,27 @@
   <div class="question">
     <span>2. A participação no projeto melhorou a vida pessoal e profissional</span>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-1" type="radio" value="1">
       <label for="question-2-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-2" type="radio" value="2">
       <label for="question-2-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-3" type="radio" value="3">
       <label for="question-2-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-4" type="radio" value="4">
       <label for="question-2-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-5" type="radio" value="5">
       <label for="question-2-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-2" id="question-2-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-6" type="radio" value="5">
       <label for="question-2-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -58,27 +58,27 @@
   <div class="question">
     <span>3. A participação no aumentou meu conhecimento de novos produtos/serviços no mercado</span>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-1" type="radio" value="1">
       <label for="question-3-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-2" type="radio" value="2">
       <label for="question-3-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-3" type="radio" value="3">
       <label for="question-3-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-4" type="radio" value="4">
       <label for="question-3-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-5" type="radio" value="5">
       <label for="question-3-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-3" id="question-3-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-6" type="radio" value="5">
       <label for="question-3-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -87,27 +87,27 @@
   <div class="question">
     <span>4. A participação no projeto aumentou meu conhecimento sobre colocação de novos produtos/serviços no mercado</span>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-1" type="radio" value="1">
       <label for="question-4-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-2" type="radio" value="2">
       <label for="question-4-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-3" type="radio" value="3">
       <label for="question-4-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-4" type="radio" value="4">
       <label for="question-4-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-5" type="radio" value="5">
       <label for="question-4-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-4" id="question-4-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-6" type="radio" value="5">
       <label for="question-4-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -115,27 +115,27 @@
   <div class="question">
     <span>5. A participação no projeto resultou em melhorias nos processos e produtos onde atuo</span>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-1" type="radio" value="1">
       <label for="question-5-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-2" type="radio" value="2">
       <label for="question-5-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-3" type="radio" value="3">
       <label for="question-5-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-4" type="radio" value="4">
       <label for="question-5-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-5" type="radio" value="5">
       <label for="question-5-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-5" id="question-5-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-6" type="radio" value="5">
       <label for="question-5-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -143,27 +143,27 @@
   <div class="question">
     <span>6. A participação no projeto melhorou minha percepção sobre sustentabilidade</span>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-1" type="radio" value="1">
       <label for="question-6-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-2" type="radio" value="2">
       <label for="question-6-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-3" type="radio" value="3">
       <label for="question-6-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-4" type="radio" value="4">
       <label for="question-6-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-5" type="radio" value="5">
       <label for="question-6-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-6" id="question-6-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-6" type="radio" value="5">
       <label for="question-6-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
@@ -171,30 +171,30 @@
   <div class="question">
     <span>7. A participação no projeto aumentou minha capacidade empreendedora</span>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-1" type="radio" value="1">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-1" type="radio" value="1">
       <label for="question-7-answer-1">1 - Discordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-2" type="radio" value="2">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-2" type="radio" value="2">
       <label for="question-7-answer-2">2 - Discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-3" type="radio" value="3">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-3" type="radio" value="3">
       <label for="question-7-answer-3">3 - Não concordo, nem discordo</label>
     </div>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-4" type="radio" value="4">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-4" type="radio" value="4">
       <label for="question-7-answer-4">4 - Concordo</label>
     </div>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-5" type="radio" value="5">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-5" type="radio" value="5">
       <label for="question-7-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input name="question-7" id="question-7-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-6" type="radio" value="5">
       <label for="question-7-answer-6">SCO - Sem condições de opinar</label>
     </div>
   </div>
 
-
+  <button type="submit">Enviar</button>
 </form>
