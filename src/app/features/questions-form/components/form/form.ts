@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ButtonComponet } from '../../../../../shared/components/button/button';
 
 @Component({
   selector: 'app-form',
-  imports: [ReactiveFormsModule],
+  imports: [ButtonComponet, ReactiveFormsModule],
   templateUrl: './form.html',
   styleUrl: './form.css'
 })
@@ -33,6 +34,11 @@ export class FormComponent {
   })
 
   protected onSubmit() {
+
+    if(!this.form.valid) {
+      this.form.markAllAsTouched();
+      return
+    }
     console.log(this.form.value);
   }
 }

@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form class="form" (ngSubmit)="onSubmit()">
   <div class="question">
     <span>1. A participação dos projetos aumentou meu conhecimento</span>
     <div class="question__input">
@@ -22,9 +22,14 @@
       <label for="question-1-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question1" name="question-1" id="question-1-answer-6" type="radio" value="6">
       <label for="question-1-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question1.touched) {
+      @if (form.controls.question1.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
   <div class="question">
@@ -50,9 +55,14 @@
       <label for="question-2-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question2" name="question-2" id="question-2-answer-6" type="radio" value="6">
       <label for="question-2-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question2.touched) {
+      @if (form.controls.question2.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
   <div class="question">
@@ -78,9 +88,14 @@
       <label for="question-3-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question3" name="question-3" id="question-3-answer-6" type="radio" value="6">
       <label for="question-3-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question3.touched) {
+      @if (form.controls.question3.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
 
@@ -107,9 +122,14 @@
       <label for="question-4-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question4" name="question-4" id="question-4-answer-6" type="radio" value="6">
       <label for="question-4-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question4.touched) {
+      @if (form.controls.question4.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
   <div class="question">
@@ -135,9 +155,14 @@
       <label for="question-5-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question5" name="question-5" id="question-5-answer-6" type="radio" value="6">
       <label for="question-5-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question5.touched) {
+      @if (form.controls.question5.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
   <div class="question">
@@ -163,9 +188,14 @@
       <label for="question-6-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question6" name="question-6" id="question-6-answer-6" type="radio" value="6">
       <label for="question-6-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question6.touched) {
+      @if (form.controls.question6.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
   <div class="question">
@@ -191,10 +221,15 @@
       <label for="question-7-answer-5">5 - Concordo totalmente</label>
     </div>
     <div class="question__input">
-      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-6" type="radio" value="5">
+      <input [formControl]="form.controls.question7" name="question-7" id="question-7-answer-6" type="radio" value="6">
       <label for="question-7-answer-6">SCO - Sem condições de opinar</label>
     </div>
+    @if (form.controls.question7.touched) {
+      @if (form.controls.question7.errors) {
+        <span class="error">Campo obrigatório</span>
+      }
+    }
   </div>
 
-  <button type="submit">Enviar</button>
+  <app-button type="submit" text="Enviar Formulário"></app-button>
 </form>
